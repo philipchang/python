@@ -1,23 +1,4 @@
-﻿'''
-#!/bin/env/python
-import logging, inspect
- 
-logging.basicConfig(level=logging.INFO,
-    format='%(asctime)s %(levelname)-8s %(filename)s:%(lineno)-4d: %(message)s',
-    datefmt='%m-%d %H:%M:%S',
-    )
-logging.debug('A debug message')
-logging.info('Some information')
-logging.warning('A shot across the bow')
- 
-def test():
-    frame,filename,line_number,function_name,lines,index=\
-        inspect.getouterframes(inspect.currentframe())[1]
-    print(frame,filename,line_number,function_name,lines,index)
-'''
-#test()
-
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 #coding=utf-8
 
 import time
@@ -67,7 +48,7 @@ def getlogger(log_dir,log_level="DEBUG", log_name="master", timeRotating=True):
 
 if __name__ == '__main__':    
     
-    master_log = getlogger('./',log_name="master")
+    master_log = getlogger('./',log_name="master.log")
     for i in range(0,10):
         master_log.debug("%d s" % (i,))
         time.sleep(1)
