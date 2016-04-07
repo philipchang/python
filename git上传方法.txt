@@ -1,0 +1,15 @@
+﻿# 操作python路径 from github
+git status， 比较本地、主干的不同
+
+
+1. pull， 主要是与主干同步
+git pull git@github.com:philipchang/python.git
+
+2. 提取本地变更
+git add .
+
+3. 本次变更注释
+git commit -m "some info"
+
+4. push 到主干
+git push git@github.com:philipchang/python.git
