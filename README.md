@@ -1,1 +1,2 @@
 # python
+some python exercise
